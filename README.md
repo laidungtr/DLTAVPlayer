@@ -19,21 +19,16 @@ DLTAVPlayer is a simple class for streaming an audio with streaming Link or loca
 
 
 #pragma mark - Streaming Audio
-/**
- stream Audio Online With Streaming link
- */
+
+//stream Audio Online With Streaming link
 + (void)DLTAVPlayer_PlayAudioWithStreamingLink:(NSString *)linkAudio;
 
-/**
- playing with bundle local file audio
- */
-+ (void)DLTAVPlayer_PlayingLocalAudioFileWithLink:(NSString *)linkAudio imageArtWorkLink:(NSString *)linkArtWork orImageArtWork:(UIImage *)imageArtWork;
+//playing with bundle local file audio
++ (void)DLTAVPlayer_PlayingLocalAudioFileWithLink:(NSString *)linkAudio;
 
 #pragma mark - Player View At Lock Screen
+//AVPlayer Set player play in Background Mode View
 
-/**
- AVPlayer Set player play in Background Mode View
- */
 + (void)DLTAVPlayer_BackgroundViewPlayerInitWithImageLink:(NSString *)linkArtWork orImageArtWork:(UIImage *)imageArtWork songName:(NSString *)stringSongName singerName:(NSString *)stringSingerName;
 
 #pragma mark - Volume
@@ -73,15 +68,11 @@ DLTAVPlayer is a simple class for streaming an audio with streaming Link or loca
  */
 + (void)DLTAVPlayerPauseAudioFadeOutEffect:(BOOL)enable;
 
-/**
- Stop AVPlayer Audio. It Remove All Obsever And set AVPlayer to Nil
- */
+//Stop AVPlayer Audio. It Remove All Obsever And set AVPlayer to Nil
 + (void)DLTAVPLayerStopAudio;
 + (void)DLTAVPLayerStopAudioWithSongChange;
 
-/**
- Seek AVPlayer Audio To CurrentValue
- */
+// Seek AVPlayer Audio To CurrentValue
 + (void)DLTAVplayerSeekToProcessingValue:(CGFloat)value;
 
 #pragma mark - Get AVPlayer Audio Duration And Current PlayTime
