@@ -15,19 +15,19 @@ DLTAVPlayer is a simple class for streaming an audio with streaming Link or loca
 + (void)DLTAVPlayerRegisterAudioInBackgroundMode:(UIApplication *)application;
 
 
-Streaming Audio
+#Streaming Audio
 //stream Audio Online With Streaming link
 + (void)DLTAVPlayer_PlayAudioWithStreamingLink:(NSString *)linkAudio;
 
 //playing with bundle local file audio
 + (void)DLTAVPlayer_PlayingLocalAudioFileWithLink:(NSString *)linkAudio;
 
-#pragma mark - Player View At Lock Screen
+#Player View At Lock Screen
 //AVPlayer Set player play in Background Mode View
 
 + (void)DLTAVPlayer_BackgroundViewPlayerInitWithImageLink:(NSString *)linkArtWork orImageArtWork:(UIImage *)imageArtWork songName:(NSString *)stringSongName singerName:(NSString *)stringSingerName;
 
-Volume
+#Volume
 //set AVPlyer Volume Status Off
 + (void)DLTAVPlayerSetVolumeOff;
 
@@ -42,7 +42,7 @@ Volume
  */
 + (CGFloat)DLTAVPlayerGetVolumeValue;
 
-AVPlayer Controller Play, Pause , Resume , Stop , Seeking
+#AVPlayer Controller Play, Pause , Resume , Stop , Seeking
 /**
  Play AVPlayer Audio if it pausing
  if effect Enable == YES : the volume play with volume Increase (fade in Effect)
@@ -65,7 +65,7 @@ AVPlayer Controller Play, Pause , Resume , Stop , Seeking
 // Seek AVPlayer Audio To CurrentValue
 + (void)DLTAVplayerSeekToProcessingValue:(CGFloat)value;
 
-Get AVPlayer Audio Duration And Current PlayTime
+#Get AVPlayer Audio Duration And Current PlayTime
 // AVPlayer Getting
 + (CGFloat)DLTAVPlayerGetAudioProcessingValue;
 + (CGFloat)DLTAVPlayerGetAudioDurationFloatValue;
@@ -73,12 +73,12 @@ Get AVPlayer Audio Duration And Current PlayTime
 + (NSString *)DLTAVPlayerGetAudioDurationString;
 + (NSString *)DLTAVPlayerGetAudioCurrentPlayTimeString;
 
-Check Player State
+#Check Player State
 + (BOOL)DLTAVPlayer_CheckAVPlayerControllerIsPlaying;
 + (BOOL)DLTAVPlayer_CheckAVPlayerControllerIsPausing;
 + (BOOL)DLTAVPlayer_CheckAVPlayerControllerIsStopped;
 
-#pragma mark - AVPlayer Set Alarm for playing song list in duration
+#AVPlayer Set Alarm for playing song list in duration
 /**
  set time playing audio for avplayer
  Example:
