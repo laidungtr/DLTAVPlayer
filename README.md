@@ -11,15 +11,11 @@ DLTAVPlayer is a simple class for streaming an audio with streaming Link or loca
 
 @end
 
-
-/**
- add this code to your applicationDidEnterBackground (AppDelegate) for register to play audio in background
- */
+//add this code to your applicationDidEnterBackground (AppDelegate) for register to play audio in background
 + (void)DLTAVPlayerRegisterAudioInBackgroundMode:(UIApplication *)application;
 
 
-#pragma mark - Streaming Audio
-
+Streaming Audio
 //stream Audio Online With Streaming link
 + (void)DLTAVPlayer_PlayAudioWithStreamingLink:(NSString *)linkAudio;
 
@@ -31,28 +27,22 @@ DLTAVPlayer is a simple class for streaming an audio with streaming Link or loca
 
 + (void)DLTAVPlayer_BackgroundViewPlayerInitWithImageLink:(NSString *)linkArtWork orImageArtWork:(UIImage *)imageArtWork songName:(NSString *)stringSongName singerName:(NSString *)stringSingerName;
 
-#pragma mark - Volume
-/**
- set AVPlyer Volume Status Off
- */
+Volume
+//set AVPlyer Volume Status Off
 + (void)DLTAVPlayerSetVolumeOff;
 
-/**
- set AVPlyer Volume Status Off
- */
+//set AVPlyer Volume Status Off
 + (void)DLTAVPlayerSetVolumeOn;
 
-/**
- set AVPlyer Volume Value
- */
+//set AVPlyer Volume Value
 + (void)DLTAVPlayerSetVolumeWithValue:(CGFloat)value;
 
-/**
- get AVPlyer Volume Value
+
+//get AVPlyer Volume Value
  */
 + (CGFloat)DLTAVPlayerGetVolumeValue;
 
-#pragma mark - AVPlayer Controller Play, Pause , Resume , Stop , Seeking
+AVPlayer Controller Play, Pause , Resume , Stop , Seeking
 /**
  Play AVPlayer Audio if it pausing
  if effect Enable == YES : the volume play with volume Increase (fade in Effect)
@@ -75,7 +65,7 @@ DLTAVPlayer is a simple class for streaming an audio with streaming Link or loca
 // Seek AVPlayer Audio To CurrentValue
 + (void)DLTAVplayerSeekToProcessingValue:(CGFloat)value;
 
-#pragma mark - Get AVPlayer Audio Duration And Current PlayTime
+Get AVPlayer Audio Duration And Current PlayTime
 // AVPlayer Getting
 + (CGFloat)DLTAVPlayerGetAudioProcessingValue;
 + (CGFloat)DLTAVPlayerGetAudioDurationFloatValue;
@@ -83,7 +73,7 @@ DLTAVPlayer is a simple class for streaming an audio with streaming Link or loca
 + (NSString *)DLTAVPlayerGetAudioDurationString;
 + (NSString *)DLTAVPlayerGetAudioCurrentPlayTimeString;
 
-#pragma mark - Check Player State
+Check Player State
 + (BOOL)DLTAVPlayer_CheckAVPlayerControllerIsPlaying;
 + (BOOL)DLTAVPlayer_CheckAVPlayerControllerIsPausing;
 + (BOOL)DLTAVPlayer_CheckAVPlayerControllerIsStopped;
