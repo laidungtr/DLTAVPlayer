@@ -174,7 +174,7 @@ static void *playbackRate = &playbackRate;
 #pragma mark - StreamAudio
 
 // playing local file audio
-+ (void)DLTAVPlayer_PlayingLocalAudioFileWithLink:(NSString *)linkAudio imageArtWorkLink:(NSString *)linkArtWork orImageArtWork:(UIImage *)imageArtWork{
++ (void)DLTAVPlayer_PlayingLocalAudioFileWithLink:(NSString *)linkAudio{
     NSURL *url = [NSURL fileURLWithPath:linkAudio];
     [[self shareController] AVPlayer_PlayingLocalFile:url];
 }

@@ -54,7 +54,7 @@ typedef NS_ENUM(NSUInteger, DLTAVPlayerState){
 /**
  playing with bundle local file audio
  */
-+ (void)DLTAVPlayer_PlayingLocalAudioFileWithLink:(NSString *)linkAudio imageArtWorkLink:(NSString *)linkArtWork orImageArtWork:(UIImage *)imageArtWork;
++ (void)DLTAVPlayer_PlayingLocalAudioFileWithLink:(NSString *)linkAudio;
 
 #pragma mark - Player View At Lock Screen
 
